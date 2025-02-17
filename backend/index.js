@@ -1,5 +1,6 @@
-const sequelize = require('./config/db');
-const { syncModels } = require('./models/associations');
+//backend/index.js
+import sequelize from './config/db.js';
+import '../models/associations.js'; 
 
 // Sync all models with the database
 sequelize.sync({ force: true }).then(() => {

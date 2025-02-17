@@ -1,0 +1,33 @@
+.product-page {
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-image img {
+  width: 400px;
+  height: auto;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+}
+
+.scroll-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.scroll-images img {
+  width: 100px;
+  height: auto;
+}

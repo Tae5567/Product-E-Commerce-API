@@ -7,8 +7,8 @@ Order: Permanent record of a completed purchase.
  */
 
 
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/db');
+import { DataTypes } from 'sequelize';
+import sequelize from '../config/db.js';
 
 const Order = sequelize.define('Order', {
   total: {
@@ -24,4 +24,4 @@ const Order = sequelize.define('Order', {
   },
 });
 
-module.exports = Order;
+export default Order;

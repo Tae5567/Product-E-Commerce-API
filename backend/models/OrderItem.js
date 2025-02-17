@@ -1,8 +1,6 @@
 //OrderItem to track which products are in a particular order and their quantities/price ata time of purchase
-
-
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/db');
+import { DataTypes } from 'sequelize';
+import sequelize from '../config/db.js';
 
 const OrderItem = sequelize.define('OrderItem', {
   quantity: {
@@ -15,4 +13,4 @@ const OrderItem = sequelize.define('OrderItem', {
   },
 });
 
-module.exports = OrderItem;
+export default  OrderItem;

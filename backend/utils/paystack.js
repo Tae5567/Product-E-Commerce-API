@@ -1,6 +1,6 @@
 //Paystack API Integration
-
-const axios = require('axios');
+//utils/paystack.js
+import axios from "axios";
 
 const initializePayment = async (email, amount) => {
   const response = await axios.post(
@@ -17,6 +17,6 @@ const initializePayment = async (email, amount) => {
     }
   );
   return response.data.data.authorization_url; // Redirect user to this URL
-};
+}
 
-module.exports = { initializePayment };
+export default initializePayment;

@@ -1,10 +1,6 @@
 //associations to define relationships between models
 
-const User = require('./User');
-const Product = require('./Product');
-const Cart = require('./Cart');
-const Order = require('./Order');
-const OrderItem = require('./OrderItem');
+import { Order, OrderItem, Cart, User, Product } from './index.js';
 
 // User ↔ Cart (One-to-Many)
 User.hasMany(Cart, { foreignKey: 'userId' });

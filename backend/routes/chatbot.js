@@ -1,3 +1,4 @@
+//routes/chatbot.js
 import express from 'express';
 import { handleChat } from '../controllers/chatbotController';
 import authMiddleware from '../middleware/auth';
